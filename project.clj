@@ -1,4 +1,4 @@
-(defproject macchiato/env "0.0.2"
+(defproject macchiato/env "0.0.3"
   :description "a library for managing environment settings from different sources"
   :url "https://github.com/yogthos/macchiato-framework/macchiato-env"
   :scm {:name "git"
@@ -6,7 +6,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :clojurescript? true
-  :dependencies [[macchiato/fs "0.0.1"]]
+  :dependencies [[macchiato/fs "0.0.2"]]
   :plugins [[codox "0.6.4"]
             [lein-npm "0.6.2"]]
   :npm {:dependencies [
