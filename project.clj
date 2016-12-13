@@ -1,4 +1,4 @@
-(defproject macchiato/env "0.0.3"
+(defproject macchiato/env "0.0.4"
   :description "a library for managing environment settings from different sources"
   :url "https://github.com/yogthos/macchiato-framework/macchiato-env"
   :scm {:name "git"
@@ -6,7 +6,7 @@
   :license {:name "MIT License"
             :url "http://opensource.org/licenses/MIT"}
   :clojurescript? true
-  :dependencies [[macchiato/fs "0.0.2"]]
+  :dependencies [[macchiato/fs "0.0.3"]]
   :plugins [[codox "0.6.4"]
             [lein-npm "0.6.2"]]
   :npm {:dependencies [
