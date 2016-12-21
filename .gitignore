@@ -1,0 +1,4 @@
+out/
+target/
+pom.xml
+.lein-failures
