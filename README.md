@@ -44,3 +44,15 @@ The library will attempt to parse variables in the following order:
 * attempt to parse boolean
 * variables that start with a letter are treated as strings
 * any other variables are parsed as EDN
+
+### Configuration Order
+
+The environment configuration will be read as the default.
+
+Next, the library will look for the `conf` environment variable. When present, it will attempt to read configuration from the file pointed to by this variable.
+
+When the `conf` environment variable is not present, the library will look for a file called `config.edn` at the location where the app was run.
+
+When a configuration file is found, it will be deep merged on top of the configuration read from the envrionment.
+
+
