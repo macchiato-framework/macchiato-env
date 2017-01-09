@@ -1,4 +1,4 @@
-(defproject macchiato/env "0.0.4"
+(defproject macchiato/env "0.0.5"
   :description "a library for managing environment settings from different sources"
   :url "https://github.com/macchiato-framework/macchiato-env"
   :scm {:name "git"
