@@ -26,3 +26,18 @@
          "bar_baz"       "true"
          "bar__baz"      "false"
          "fooz_bar__baz" "{:foo :bar}"}))))
+
+(deftest merge-config
+  (is
+    (=
+      {:foo "string value"
+       :bar "new value"
+       :new-key "I'm new"
+       :fooz {:baz {:foo :bar :replace-me :replaced :merged-key :merged-value}}}
+      (env/deep-merge
+        {:foo "string value"
+         :bar 1234
+         :fooz {:baz {:foo :bar :replace-me :i-should-be-gone}}}
+        {:bar "new value"
+         :new-key "I'm new"
+         :fooz {:baz {:merged-key :merged-value :replace-me :replaced}}}))))
