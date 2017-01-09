@@ -47,8 +47,15 @@
           (fs/slurp)
           (edn/read-string)))
 
+(defn- deep-merge [a b]
+  (merge-with (fn [x y]
+                (cond (map? y) (deep-merge x y)
+                      (vector? y) (concat x y)
+                      :else y))
+              a b))
+
 (defn env [& [filename]]
   (let [env-config (env-props)]
-    (merge
+    (deep-merge
       env-config
       (file-props (or (:conf env-config) filename "config.edn")))))
