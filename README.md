@@ -31,9 +31,9 @@ The library uses a deep merge strategy, so any nested structures will be merged 
 Environment variable names are converted into Clojure style keywords. These variables are parsed using the following strategy:
 
 * `PORT=3000` -> `{:port 3000}`
-* `NREPL_PORT=7000` - {:nrepl-port 7000}
+* `NREPL_PORT=7000` - `{:nrepl-port 7000}`
 * `DATABASE_URL="jdbc:h2:./guestbook_dev.db"` -> `{:database-url "jdbc:h2:./guestbook_dev.db"}`
-* `IO__HTTP_MAX_CONNECTIONS` -> `{:io {:http-max-connections 10}}`
+* `IO__HTTP_MAX_CONNECTIONS="{:value 10}` -> `{:io {:http-max-connections {:value 10}}}`
 
 Note that the `_` is converted to `-`, while `__` is used to indicate nesting for shell variables. These
 conventions can be mixed as seen with `IO__HTTP_MAX_CONNECTIONS`.
