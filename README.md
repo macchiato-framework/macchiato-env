@@ -54,5 +54,3 @@ Next, the library will look for the `conf` environment variable. When present, i
 When the `conf` environment variable is not present, the library will look for a file called `config.edn` at the location where the app was run.
 
 When a configuration file is found, it will be deep merged on top of the configuration read from the envrionment.
-
-
