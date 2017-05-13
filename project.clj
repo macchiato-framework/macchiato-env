@@ -1,4 +1,4 @@
-(defproject macchiato/env "0.0.5"
+(defproject macchiato/env "0.0.6"
   :description "a library for managing environment settings from different sources"
   :url "https://github.com/macchiato-framework/macchiato-env"
   :scm {:name "git"
@@ -8,7 +8,7 @@
   :clojurescript? true
   :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
                  [org.clojure/clojurescript "1.9.293" :scope "provided"]
-                 [macchiato/fs "0.0.6"]]
+                 [macchiato/fs "0.0.7"]]
   :plugins [[codox "0.6.4"]
             [lein-npm "0.6.2"]
             [lein-doo "0.1.7"]
