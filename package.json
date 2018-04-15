@@ -1,30 +1,20 @@
 {
-  "name": "@macchiato/env",
-  "version": "0.0.6",
-  "description": "Environment variable library for Macchiato.",
-  "author": {
-    "name" : "Dmitri Sotnikov",
-    "email" : "dmitri.sotnikov@gmail.com",
-    "url" : "http://yogthos.net/"
-  },
-  "contributors": [
-    {
-      "name" : "Ricardo J. Méndez",
-      "url" : "https://www.numergent.com/"
-    }
-  ],
+  "description": "a library for managing environment settings from different sources",
+  "license": "MIT License",
+  "private": true,
   "homepage": "https://github.com/macchiato-framework/macchiato-env",
-  "license": "MIT",
+  "name": "@macchiato/env",
+  "author": {
+    "name": "Dmitri Sotnikov",
+    "email": "dmitri.sotnikov@gmail.com",
+    "url": "http://yogthos.net/"
+  },
   "directories": {
     "lib": "src"
   },
   "files": [
     "src/*"
   ],
-  "keywords": [
-    "clojure",
-    "clojurescript",
-    "cljs",
-    "self-host"
-  ]
+  "version": "0.0.6",
+  "dependencies": {}
 }

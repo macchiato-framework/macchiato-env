@@ -10,10 +10,18 @@
                  [org.clojure/clojurescript "1.9.293" :scope "provided"]
                  [macchiato/fs "0.0.7"]]
   :plugins [[codox "0.6.4"]
-            [lein-npm "0.6.2"]
+            [macchiato/lein-npm "0.6.6"]
             [lein-doo "0.1.7"]
-            [lein-cljsbuild "1.1.4"]]
-  :npm {:dependencies []}
+            [lein-cljsbuild "1.1.7"]]
+  :npm {:name "@macchiato/env"
+        :write-package-json true
+        :private false
+        :directories {:lib "src"}
+        :files ["src/*"]
+        :author {:name "Dmitri Sotnikov"
+                 :email "dmitri.sotnikov@gmail.com"
+                 :url "http://yogthos.net/"}
+        :dependencies []}
   :profiles {:test
              {:doo {:build "test"}
               :cljsbuild
